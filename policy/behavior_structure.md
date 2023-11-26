@@ -15,7 +15,7 @@ Behaviors are in Behaviors and functions are organized into three layers of dept
 3. **Behavior/Function Modules**: Individual Python files that contain a single behavior or function.
 
 ### Structure of a Behavior/Function Module
-Each behavior or function module should adhere to the following structure:
+Each behavior or function module is implemented in a single Python (`.py`) file. It should adhere to the following structure:
 
 1. **Docstring**:
    - One-line description: A concise one-line summary of the behavior or function.
