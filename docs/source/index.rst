@@ -12,12 +12,7 @@ Behavior Documentation
 ----------------------
 All the behaviors are documented in the following section:
 
-.. toctree::
-   :maxdepth: 4
-   :glob:
-
-   src/behaviors/
-
+.. include:: behavior_toctree.rst
 
 Policy Documentation
 --------------------
