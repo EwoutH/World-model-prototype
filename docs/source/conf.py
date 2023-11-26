@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath("../.."))
 
-behaviors_dir = '../src/behaviors'
+behaviors_dir = '../../src/behaviors'
 toctree_entries = []
 
 for behavior in os.listdir(behaviors_dir):
