@@ -5,7 +5,7 @@ The goal of this policy document is to provide a clear and structured framework 
 In the context of ABM, we distinguish between behaviors and functions based on their operational characteristics.
 
 - **Function**: A function operates in a stateless manner, meaning it doesn't rely on the agent or model's state to function. It can take input arguments and return output variables, just like regular Python functions.
-- **Behavior**: A behavior operates within the context of an agent's, another agent's, and/or the model's state. It may take this state as input and/or modify it. Behaviors are implemented as classes with a single method bearing the same name as the class/behavior. Generally, behaviors do not require an `__init__` method. Users can incorporate behaviors into existing Agent or Model classes using Mixin.
+- **Behavior**: A behavior operates within the context of an agent's, another agent's, and/or the model's state. It may take this state as input and/or modify it. Behaviors are implemented as classes with a single method bearing the same name as the class/behavior. Generally, behaviors do not require an `__init__` method. Users can incorporate behaviors into existing Agent or Model classes using Mixin. A behavior always has access to the self (agent or model) object, and can optionally take a `agent`, `agent_list`, or `model` argument.
 
 ### Library structure
 Behaviors are in Behaviors and functions are organized into three layers of depth:
