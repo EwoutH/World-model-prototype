@@ -17,10 +17,10 @@ toctree_entries = []
 for behavior in os.listdir(behaviors_dir):
     behavior_path = os.path.join(behaviors_dir, behavior)
     if os.path.isdir(behavior_path):
-        readme_path = os.path.join(behavior_path, "README.md")
+        readme_path = os.path.join(behavior_path, "readme.md")
         if os.path.exists(readme_path):
             # Assuming the README files are named 'README.md'
-            toctree_entries.append(f"{behavior_path}/README")
+            toctree_entries.append(f"{behavior_path}/readme")
 
 # Write to a file that can be included in your Sphinx documentation
 with open("behavior_toctree.rst", "w") as file:
